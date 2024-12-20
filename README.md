@@ -23,7 +23,7 @@
 - **Dynamic Price Optimization**: Implement dynamic pricing based on factors like demand and availability.
 - **Admin Page** (if needed):
   - Add a dedicated admin page.
-  - Implement login features for both guests and admins.
+  - For that we have to implement login features for both guests and admins.
 
 ## Contribution Guidelines
 
