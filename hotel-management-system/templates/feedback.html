@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Guest Feedback</h2>
+        <ul class="list-group">
+            {% for fb in feedbacks %}
+            <li class="list-group-item">
+                <strong>{{ fb[1] }}:</strong> {{ fb[2] }}
+            </li>
+            {% endfor %}
+        </ul>
+        <h3 class="mt-4">Submit Feedback</h3>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Your Name" class="form-control my-2" required>
+            <textarea name="comment" placeholder="Your Feedback" class="form-control my-2" required></textarea>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <a href="/" class="btn btn-primary mt-3">Home</a>
+    </div>
+</body>
+</html>
